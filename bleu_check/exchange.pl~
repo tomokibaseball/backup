@@ -1,0 +1,14 @@
+#!/usr/bin/perl 
+  
+my $file = "bleu1";
+
+open(IN, $file) or die "Can't open $file: $!\n";
+while(<IN>){
+ 
+   s/\. \?/\?/g;
+   s/\? \./\?/g;
+   s/\. \./\./g;
+   print;
+  }
+
+

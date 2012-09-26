@@ -1,0 +1,26 @@
+MT evaluation scorer began on 2012 Sep 17 at 14:40:33
+command line:  /project/nakamura-lab01/Share/Tools/mteval-v11b.pl -s /home/is/tomoki-f/sim/bleu_check/btec_test_ja.sgm -r /home/is/tomoki-f/sim/bleu_check/btec_ref_en.sgm -t /home/is/tomoki-f/sim/bleu_check/mt_result.sgm -c
+  Evaluation of any-to-en translation using:
+    src set "btec_test" (1 docs, 1018 segs)
+    ref set "btec_ref" (12 refs)
+    tst set "btec_ref" (1 systems)
+
+NIST score = 8.1216  BLEU score = 0.3933 for system "my-system-name"
+
+# ------------------------------------------------------------------------
+
+Individual N-gram scoring
+        1-gram   2-gram   3-gram   4-gram   5-gram   6-gram   7-gram   8-gram   9-gram
+        ------   ------   ------   ------   ------   ------   ------   ------   ------
+ NIST:  5.4800   1.7576   0.5833   0.2167   0.0842   0.0270   0.0061   0.0029   0.0012  "my-system-name"
+
+ BLEU:  0.7356   0.4799   0.3217   0.2107   0.1406   0.0851   0.0451   0.0214   0.0100  "my-system-name"
+
+# ------------------------------------------------------------------------
+Cumulative N-gram scoring
+        1-gram   2-gram   3-gram   4-gram   5-gram   6-gram   7-gram   8-gram   9-gram
+        ------   ------   ------   ------   ------   ------   ------   ------   ------
+ NIST:  5.4800   7.2375   7.8208   8.0375   8.1216   8.1487   8.1548   8.1578   8.1590  "my-system-name"
+
+ BLEU:  0.7356   0.5941   0.4843   0.3933   0.3202   0.2567   0.2003   0.1515   0.1119  "my-system-name"
+MT evaluation scorer ended on 2012 Sep 17 at 14:40:40

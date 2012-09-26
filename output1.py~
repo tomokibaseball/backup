@@ -1,0 +1,11 @@
+import sys
+import time
+import os
+
+
+infp = open("/home/is/tomoki-f/sim/compile_ja", 'r')
+for line in infp:
+    sent = line.rstrip()
+    print sent   
+
+infp.close()

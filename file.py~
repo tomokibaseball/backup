@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys
+import time
+import os
+
+infp = open("/home/is/tomoki-f/sim/con.txt", 'r')
+for line in infp:
+    sent = line.rstrip()
+    print sent + "\n"   
+
+infp.close()

@@ -1,0 +1,14 @@
+import sys
+import time
+import os
+
+
+infp = open("/home/is/tomoki-f/sim/bleu2", 'r')
+for line in infp:
+    sent = line.split()
+for i in range(0,len(sent)):
+    if sent == "." or sent == "?":
+     ret = sent + "\n"
+    print ret 
+
+infp.close()

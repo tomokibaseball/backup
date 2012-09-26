@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys
+import time
+import os
+    
+infp = open("/home/is/tomoki-f/sim/data_ja", 'r')
+
+   
+ret = ""
+for sent in infp:
+   sent = sent.split()
+   #print len(sent)   
+#f.close()   
+
+infp.close()

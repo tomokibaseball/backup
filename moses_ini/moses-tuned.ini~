@@ -1,0 +1,66 @@
+#########################
+### MOSES CONFIG FILE ###
+#########################
+
+# input factors
+[input-factors]
+0
+
+# mapping steps
+[mapping]
+0 T 0
+
+# translation tables: table type (hierarchical(0), textual (0), binary (1)), source-factors, target-factors, number of scores, file 
+# OLD FORMAT is still handled for back-compatibility
+# OLD FORMAT translation tables: source-factors, target-factors, number of scores, file 
+# OLD FORMAT a binary table type (1) is assumed 
+[ttable-file]
+0 0 0 5 /home/is/tomoki-f/btec/btec_ja2en_6/model/phrase-table.gz
+
+# no generation models, no generation-file section
+
+# language models: type(srilm/irstlm), factors, order, file
+[lmodel-file]
+0 0 5 /home/is/tomoki-f/btec/btec_ja2en_6/lm/btec.lm
+
+
+# limit on how many phrase translations e for each phrase f are loaded
+# 0 = all elements loaded
+[ttable-limit]
+20
+
+# distortion (reordering) files
+[distortion-file]
+0-0 wbe-msd-bidirectional-fe-allff 6 /home/is/tomoki-f/btec/btec_ja2en_6/model/reordering-table.wbe-msd-bidirectional-fe.gz
+
+# distortion (reordering) weight
+[weight-d]
+0.00885995
+0.0715248
+0.00914118
+0.0894582
+-0.0306001
+0.0954738
+0.0324753
+
+# language model weights
+[weight-l]
+0.147763
+
+
+# translation model weights
+[weight-t]
+0.0762388
+0.0522981
+0.077119
+0.0188369
+0.112512
+
+# no generation models, no weight-generation section
+
+# word penalty
+[weight-w]
+-0.177699
+
+[distortion-limit]
+6

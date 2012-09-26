@@ -1,0 +1,15 @@
+#!/bin/csh -f
+
+set tool=/project/nakamura-lab01/Share/Tools
+set my_dir=/home/is/tomoki-f
+set blue = mt_result
+
+$tool/scripts/wrap-xml.perl /home/is/tomoki-f/btec/btec_ja2en_6/evaluation/btec.tuned-filtered.output.sgm en my-system-name < /home/is/tomoki-f/sim/bleu_check/$bleu > /home/is/tomoki-f/sim/bleu_check/$bleu.sgm
+$tool/mteval-v11b.pl -s $my_dir/sim/bleu_check/btec_test_ja.sgm -r $my_dir/sim/bleu_check/btec_ref_en.sgm -t $my_dir/sim/bleu_check/$bleu.sgm -c > log
+
+
+
+
+
+
+

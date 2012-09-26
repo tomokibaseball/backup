@@ -1,0 +1,8 @@
+#!/bin/csh -f
+
+#perl /home/is/tomoki-f/sim/mt_cliant.pl
+while(1)
+cat /home/is/tomoki-f/sim/check | nc -w 1 ahclab03 15000 > /home/is/tomoki-f/sim/confirm.txt
+#python /home/is/tomoki-f/sim/dict.py
+perl /home/is/tomoki-f/sim/delete.perl
+end

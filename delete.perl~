@@ -1,0 +1,12 @@
+#!/usr/bin/perl 
+  
+my $file = "/home/is/tomoki-f/btec2/smt.log";
+open(IN, $file) or die "Can't open $file: $!\n";
+while(<IN>){
+   s/\|.*?\|//g; 
+   print;
+  }
+close(IN);
+
+   
+

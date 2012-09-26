@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys
+import time
+import os
+
+infp = open("/home/is/tomoki-f/sim/bleu1", 'r')
+line = infp.readlines()
+infp.close()
+
+ret = ""
+for sent in line:
+   sent = sent.split()
+   #print sent
+   for i in range(0,len(sent)):
+    
+     if ret != "":
+        ret = ret + " " + sent[i] 
+     else:
+        ret = sent[i]
+  
+   #print ret  
+   print sent
+   ret = ""
+  
+
